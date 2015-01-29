@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <title>ChitChat</title>
 </head>
 
-
 <body>
-  <h1>ChitChat</h1>
 
+<!-- This is where the JS will insert the data from the server -->
 
   <div class="prompt-container">
     <div class="prompt-box">
@@ -24,7 +25,30 @@
   <div class="input-container">
   </div>
 
+
+<!-- This is the template the JS talks to!!! -->
+  <script type="text/template" class="message-reply-template">
+
+    <ul>
+
+      <li> class="username">
+        <% user %>
+      </li>
+
+      <li> class="message">
+        <% message %>
+      </li>
+
+      <li> class="time-stamp">
+        <% time %>
+      </li>
+
+    </ul>
+  </script>
+
   <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+
 </body>
+
 </html>
