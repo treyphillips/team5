@@ -4,8 +4,11 @@
 
   $(document).ready(function() {
 
+
+
       var baseURL = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
-      
+
+      console.log(userName);
 
       $.ajax({
         url: baseURL,
@@ -28,10 +31,10 @@
 
     });
 
-      $.getJSON(baseURL).done(function(items) {
-        renderTemplate('message-reply-template', 'messageboard-container', result);
-      })
-
+      // $.getJSON(baseURL).done(function(items) {
+      //   renderTemplate('message-reply-template', 'messageboard-container', result);
+      // })
+      var userName = $("#input-userName").click().text();
 
     });
   })();
