@@ -9,7 +9,12 @@
   width: 600px;
   background-color: #447799;
   margin: auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: white;
+  list-style: none; }
+  .messageboard-container li {
+    border-top: white solid 1px;
+    margin-top: 2px; }
 
 input {
   width: 400px;

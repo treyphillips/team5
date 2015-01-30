@@ -1,24 +1,35 @@
 (function() {
   'use strict';
 
+  var baseURL = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
 
   $(document).ready(function() {
 
 
 
-      var baseURL = "http://tiny-pizza-server.herokuapp.com/collections/greenville-chats";
 
-      console.log(userName);
+      // var userName = [];
+      // userName.push($("#input-userName").submit().value());
+      // console.log(userName);
 
-      $.ajax({
-        url: baseURL,
-        type: "GET"
-      }).done(function(data) {
-        console.log(data);
-
+      var $messageboardContainer = $('.messageboard-container');
+      var messageboardTemplate = _.template($('[data-template-name=message-post]').text());
+      $.ajax(baseURL).done(function(posts) {
+        _.each(posts, function(post){
+          _.defaults(post, {
+            message: "",
+            username: "",
+            createdAt: ""
+          });
+          $messageboardContainer.append(messageboardTemplate(post));
+        });
       });
 
-      $.ajax({
+      
+
+
+    });
+    $.ajax({
       url: baseURL,
       type: "POST",
       data: {
@@ -27,14 +38,7 @@
         createdAt: Date.now()
       }
     }).done(function(data) {
-      console.log(data);
-
-    });
-
-      // $.getJSON(baseURL).done(function(items) {
-      //   renderTemplate('message-reply-template', 'messageboard-container', result);
-      // })
-      var userName = $("#input-userName").click().text();
+      // console.log(data);
 
     });
   })();

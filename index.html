@@ -15,9 +15,6 @@
   <div class="prompt-container">
     <div class="prompt-box">
 
-      <div class="prompt-login">Please Enter A Username</div>
-      <input class="login-name">
-      <button class="login-button">Login</button>
 
       <div class="input-container username">
         <input type="text" id="input-userName" placeholder="Enter a Username">
@@ -29,6 +26,23 @@
   <div class="messageboard-container">
 
     <ul class="message-reply">
+      <script type="text/template"  data-template-name="message-post">
+
+
+
+        <li> <id="username">
+          <%= username %>
+
+          <id="message">
+          <%= message %>
+
+
+          <id="time-stamp">
+          <%= createdAt %>
+        </li>
+
+
+      </script>
     </ul>
 
   </div>
@@ -41,28 +55,12 @@
 
   <!--This is the template the JS talks to!!! -->
 
-  <script type="text/template" id="message-reply-template">
 
-
-
-    <li> class="username">
-      <% user %>
-    </li>
-
-    <li> class="message">
-      <% message %>
-    </li>
-
-    <li> class="time-stamp">
-      <% time %>
-    </li>
-
-
-  </script>
 
 
   <script src="scripts/bower_components/underscore/underscore.js"></script>
   <script src="scripts/bower_components/jquery/dist/jquery.js"></script>
+  <script src="scripts/bower_components/moment/moment.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
 
 </body>

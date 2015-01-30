@@ -12,6 +12,12 @@ width: 50px;
   background-color: #447799;
   margin: auto;
   border-radius: 5px;
+  color: white;
+  list-style: none;
+  li {
+    border-top: white solid 1px;
+    margin-top: 2px;
+  }
 }
 
 input {
