@@ -14,12 +14,14 @@
   <div class="prompt-container">
     <div class="prompt-box">
       <div class="prompt-login">Please Enter A Username</div>
-      <input class=""
-
+      <input class="login-name">
+      <button class="login-button">Login</button>
     </div>
   </div>
 
   <div class="messageboard-container">
+    <ul class="message-reply">
+    </ul>
   </div>
 
   <div class="input-container">
@@ -29,7 +31,6 @@
 <!-- This is the template the JS talks to!!! -->
   <script type="text/template" class="message-reply-template">
 
-    <ul>
 
       <li> class="username">
         <% user %>
@@ -43,7 +44,6 @@
         <% time %>
       </li>
 
-    </ul>
   </script>
 
   <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
