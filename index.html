@@ -17,8 +17,12 @@
 
 
       <div class="input-container username">
-        <input type="text" id="input-userName" placeholder="Enter a Username">
-        <button type="submit">Submit</button>
+
+        <form  method="post">
+          <input class="username-value" name="username" type="text">
+          <input class="submit" type="submit">
+
+        </form>
       </div>
     </div>
   </div>
@@ -30,15 +34,17 @@
 
 
 
-        <li> <id="username">
+        <li class="username">
           <%= username %>
+        </li>
 
-          <id="message">
+        <li class="message">
           <%= message %>
+        </li>
 
 
-          <id="time-stamp">
-          <%= createdAt %>
+        <li class="time-stamp">
+          <%= moment(createdAt).fromNow() %>
         </li>
 
 
