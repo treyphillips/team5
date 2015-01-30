@@ -1,20 +1,18 @@
 .button {
-width: 50px;
-}
+  width: 50px; }
 
 .input-container {
-  margin: auto;
-}
+  margin: auto; }
 
 .messageboard-container {
   height: 400px;
   width: 600px;
   background-color: #447799;
   margin: auto;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 input {
   width: 400px;
-  height: 20px;
-}
+  height: 20px; }
+
+/*# sourceMappingURL=main.css.map */

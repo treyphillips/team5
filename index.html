@@ -5,49 +5,65 @@
   <meta charset="UTF-8">
 
   <title>ChitChat</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
-<!-- This is where the JS will insert the data from the server -->
+  <!-- This is where the JS will insert the data from the server -->
 
   <div class="prompt-container">
     <div class="prompt-box">
+
       <div class="prompt-login">Please Enter A Username</div>
       <input class="login-name">
       <button class="login-button">Login</button>
+
+      <div class="input-container username">
+        <input type="text" id="input-userName" placeholder="Enter a Username">
+        <button type="submit">Submit</button>
+      </div>
     </div>
   </div>
 
   <div class="messageboard-container">
+
     <ul class="message-reply">
     </ul>
+
   </div>
 
-  <div class="input-container">
+  <div class="input-container ">
+    <input type="text" class="input-field" placeholder="Say Something!!!">
+    <button type="submit">Send</button>
   </div>
 
 
-<!-- This is the template the JS talks to!!! -->
-  <script type="text/template" class="message-reply-template">
+  <!--This is the template the JS talks to!!! -->
+
+  <script type="text/template" id="message-reply-template">
 
 
-      <li> class="username">
-        <% user %>
-      </li>
 
-      <li> class="message">
-        <% message %>
-      </li>
+    <li> class="username">
+      <% user %>
+    </li>
 
-      <li> class="time-stamp">
-        <% time %>
-      </li>
+    <li> class="message">
+      <% message %>
+    </li>
+
+    <li> class="time-stamp">
+      <% time %>
+    </li>
+
 
   </script>
 
-  <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
-  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+
+  <script src="scripts/bower_components/underscore/underscore.js"></script>
+  <script src="scripts/bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 
 </body>
 
