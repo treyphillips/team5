@@ -1,5 +1,7 @@
+
+
 .button {
-width: 50px;
+  width: 50px;
 }
 
 
@@ -17,6 +19,7 @@ width: 50px;
   color: white;
   list-style: none;
   max-width: 100%;
+  overflow: auto;
   .username,
   .message,
   .time-stamp {
