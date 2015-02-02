@@ -1,3 +1,9 @@
+.headline-container h1 {
+  margin-left: 45%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  color: #447799; }
+
 .button {
   width: 50px; }
 
@@ -23,8 +29,13 @@
     display: inline-block;
     margin: 2px 0 2px 2px; }
 
+.msg-input-container {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 600px;
+  margin: 0 auto; }
+
 input {
-  width: 400px;
+  width: 600px;
   height: 20px; }
 
 /*# sourceMappingURL=main.css.map */
