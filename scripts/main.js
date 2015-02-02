@@ -104,6 +104,8 @@ setInterval(messageboardTemplate, 7000);
     $('#input-field').val('');
   });
 })();
+
+
 // $.ajax({
 //   url: baseURL,
 //   type: "POST",
